@@ -1,0 +1,21 @@
+
+
+.contact-menu{
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-right: 5px;
+  border-radius: 10px;
+}
+
+.contact-menu i{
+  font-size: 18px;
+}
+
+.menu-wrapper{
+  margin: 20px 0;
+}
+
+/* Add this CSS in your CSS file */
+.checked-row {
+  background-color: #a8d8f5; /* Light grey background color */
+}

@@ -1,0 +1,31 @@
+
+
+<section class="p-5">
+
+  <div class="w-100 d-flex justify-content-between">
+  <h1 class="fs-1 py-3">Contacts</h1>
+  <button  routerLink="/add-contacts" class="btn bg-primary text-white h-100 me-5 mt-3">Add Contact +</button>
+</div>
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">id</th>
+        <th scope="col">Name </th>
+        <th scope="col">Email</th>
+        <th scope="col">Phone</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let contact of contacts">
+        <th scope="row">{{contact.contactId}}</th>
+        <td>{{contact.fullName}}</td>
+        <td>{{contact.email}}</td>
+        <td>{{contact.phone}}</td>
+        <td>
+         <button (click)="deleteContact(contact.contactId)" style="border: none;"><i style="color: red;" class="fa-solid fa-trash"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</section>
